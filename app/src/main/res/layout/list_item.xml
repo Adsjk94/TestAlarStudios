@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="16dp" />
+
+        <TextView
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/item_image"
+            tools:text="name"
+            android:layout_toStartOf="@+id/item_id"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:id="@+id/item_id"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            tools:text="id"/>
+
+        <TextView
+            android:layout_below="@+id/item_name"
+            android:id="@+id/item_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/item_image"
+            tools:text="country" />
+        <TextView
+            android:layout_below="@+id/item_country"
+            android:id="@+id/item_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/item_image"
+            tools:text="lat" />
+
+        <TextView
+            android:layout_below="@+id/item_lat"
+            android:id="@+id/item_lon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/item_image"
+            tools:text="lon"
+            android:layout_marginBottom="16dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

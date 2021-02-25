@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AlarStudios</string>
+    <string name="login_form_password">password</string>
+    <string name="login_form_login">login</string>
+    <string name="login_form_enter_btn">Login</string>
+    <string name="login_form_toast_empty_fields">Empty</string>
+    <string name="login_form_toast_error_fields">Incorrect Login or password! </string>
+    <string name="login_form_toast_error_text">Try again</string>
+    <string name="table_toast_error_data">Error data</string>
+    <string name="network_error">Not network</string>
+    <string name="api_map_key">Not network</string>
+    <string name="map_permission">Please, apply permission</string>
+</resources>
